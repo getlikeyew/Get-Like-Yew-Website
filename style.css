@@ -18,7 +18,8 @@ input[type=number] {
 
 body{
   font-family: "Arial";
-  background-color: #c2db80
+  background-color: #CCCCCC;
+  max-width: 1500px;
 }
 
 p{
@@ -46,7 +47,7 @@ img{
 [class*="col-"] {
   float: left;
   padding: 0 15px;
-  border: 2px solid #6A8347;
+  border: 2px solid black;
   background-color: #;
 }
 
@@ -65,7 +66,7 @@ img{
 
   /* Header*/
 .header {
-  border: 4px solid #6A8347;
+  border: 4px solid black;
   padding: 0 10px;
   font-size: 20px;
   text-shadow: 3px 3px 3px black;
@@ -76,24 +77,23 @@ img{
 /*Navbar container*/
 .navigation-bar{
   overflow:hidden;
-  border: 3px solid #6A8347;
+  border: 3px solid black;
 }
 /*Links inside the nav bar*/
 .navbar a{
   float: left;
   font-size: 19px;
-  color: #FEFCD7;
-  text-shadow: 2px 2px 2px black;
+  color: #003300;
   text-align: center;
   padding: 10px 10px;
   text-decoration: none;
-  border: 1px solid #6A8347;
+  border: 1px solid black;
 }
 /*The dropdown container*/
 .dropdown{
   float: left;
   overflow: hidden;
-  border: 1px solid #6A8347;
+  border: 1px solid black;
 }
 /*Dropdown button*/
 .dropdown .dropbtn{
@@ -101,8 +101,7 @@ img{
   font-size: 19px;
   border: none;
   outline: none;
-  color: #FEFCD7;
-  text-shadow: 2px 2px 2px black;
+  color: #003300;
   padding: 10px 10px;
   background-color: inherit;
   font-family: inherit;
@@ -110,13 +109,13 @@ img{
 }
 /*Background color to navbar links on hover*/
 .navigation-bar a:hover, .dropdown:hover .dropbtn{
-  background-color: #71B238;
+  background-color: #F2F2F2;
 }
 /*Dropdown content (hidden by default)*/
 .dropdown-content{
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #F2F2F2;
   min-width: 120px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -124,7 +123,7 @@ img{
 /*Links inside dropdown*/
 .dropdown-content a{
   float: none;
-  color: black;
+  color: #003300;
   padding: 12px 10px;
   text-shadow: 0px 0px 0px;
   text-decoration: none;
@@ -143,22 +142,22 @@ img{
 
   /*Nutrition Basics Start*/
 .nutrition-header, .food-header, .exercise-header{
+  color: #007100;
   text-align:center;
   font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
 }
 .nutrition-sections::before{
   content: "< ";
-  color: #FEFCD7;
-  text-shadow: 2px 2px 2px black;
+  color: #003300;
 }
 .nutrition-sections::after{
   content: " >";
-  color: #FEFCD7;
-  text-shadow: 2px 2px 2px black;
+  color: #003300;
 }
 .nutrition-sections{
   text-align:center;
   font-weight: bold;
+  color: #007100;
 }
 .cal-countbtn{
   font-size: 12px;
@@ -179,7 +178,7 @@ img{
 
   /*Collapsible Start*/
 .collapsible {
-  background-color: #FEFCD7;
+  background-color: #F2F2F2;
   color: black;
   cursor: pointer;
   padding: 12px;
@@ -194,18 +193,19 @@ img{
 .content {
   display: none;
   overflow: hidden;
-  background-color: #c2db80
+  background-color: #CCCCCC
 
 }
 .active, .collapsible:hover {
-  background-color: #71B238;
+  background-color: #003300;
+  color: #F2F2F2;
 }
 
 .button{
-  background-color: #c2db80;
+  background-color: #333333;
   border: 1px double;
   outline: none;
-  color: black;
+  color: white;
   width: 100%;
   font-size: 14px;
   margin: 0;
@@ -216,6 +216,7 @@ img{
 
 .button:hover{
   background-color: #ddd;
+  color:black;
 
 }
 
@@ -245,26 +246,45 @@ img{
   border-radius: 15px;
   align-items: center;
   padding: 10px 13px;
-  border: 2px solid #FEFCD7;
+  border: 2px solid #F2F2F2;
+  background-color: black;
+  color: #F2F2F2;
   font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
   font-size: 18px;
   font-weight: bold;
 }
 
 .muscle-box {
-  border: 4px solid Red;
+  border: 3px solid black;
+  background-color: #FEFCD7;
+}
+
+.biopic{
+  border: none;
+}
+
+.muscle-part{
+  float: right;
+  max-width:200px;
+  margin-bottom: 5px
+}
+
+.social-media{
+  border: 2px black solid;
 }
 
 th{
   text-align: center;
   font-size: 18px;
   border: 2px  solid black;
+  color: #007100;
+  background-color: #F2F2F2;
 }
 td{
   border: 2px  solid black;
   vertical-align: top;
   font-size: 14px;
-  background-color: #FEFCD7;
+  background-color: #F2F2F2;
 }
 
 .certification{

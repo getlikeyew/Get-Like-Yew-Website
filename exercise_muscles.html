@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <title>Get Like Yew - Exercise Muscles</title>
+  <link rel="stylesheet" href="../Style/style.css">
+  <link rel="icon" href="../Images/favicon.ico" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/c01448b23b.js" crossorigin="anonymous"></script> <!-- For Icons-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <!--I'll put the business name and logo here-->
+  <div class="row header">
+    <img src="../Images/Banner_Sled.png" height="150" align="left">
+  </div>
+
+  <!-- Navigation Bar-->
+  <div class=" row navbar">
+    <a href="../index.html"><i class="fas fa-home fa-sm"></i> Home</a>
+    <div class="dropdown">
+      <button class="dropbtn"><i class="fas fa-dumbbell fa-sm"></i> Exercise</button>
+      <div class="dropdown-content">
+        <a href="exercise_muscles.html">Muscles</a>
+        <a href="exercise_equipment.html">Equipment</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn"><i class="fas fa-apple-alt fa-sm"></i> Nutrition</button>
+      <div class="dropdown-content">
+        <a href="nutrition_basics.html">Basics</a>
+        <a href="nutrition_food.html">Food</a>
+      </div>
+    </div>
+    <a href="programs.html"><i class="fas fa-running fa-sm"></i> Programs</a>
+    <a href="about.html"><i class="far fa-question-circle fa-sm"></i> About</a>
+  </div>
+
+  <div class="row">
+    <!--Nutrition Basics -->
+    <div class="col-12">
+      <!--Introduction-->
+      <div class="row">
+        <div class="col-6">
+          <p style="font-size: 18px;">Physcial activity is non-negotiable! Humans were made to move, plain and simple. The baseline recommendation is at least 150 minutes a week of moderate-intensity physical activity. There are countless benefits to exercise and many risks that come with its absence. Of course, the gym is not the only way to be physcially active. There are tons of other things to do across sports, leisure, daily activities etc. This section focuses on the basics of muscle and cardio training.</p>
+        </div>
+        <div class="col-6 ">
+          <ul style="font-size: 18px;">
+            <li>Improved cardiorespiratory and muscular fitness</li>
+            <li>Improved bone health</li>
+            <li>Lower risk of coronary heart disease</li>
+            <li>lower risk of stroke</li>
+            <li>Reduced symptons of depression</li>
+            <li>Better cognitive function</li>
+            <li>Improved sleep quality</li>
+          </ul>
+        </div>
+      </div>
+      <img width="50%"  src="../Images/Reps&Sets.png" alt="">
+      <br>
+
+      <div style="text-align:center">
+        <button class="body-part" onclick="armsHighlight()">Arms</button>
+        <i class="fas fa-arrows-alt-h fa-xs"></i>
+        <button class="body-part" onclick="chestHighlight()">Chest</button>
+        <i class="fas fa-arrows-alt-h fa-xs"></i>
+        <button class="body-part" onclick="shouldersHighlight()">Shoulders</button>
+        <i class="fas fa-arrows-alt-h fa-xs"></i>
+        <button class="body-part" onclick="backHighlight()">Back</button>
+        <i class="fas fa-arrows-alt-h fa-xs"></i>
+        <button class="body-part" onclick="coreHighlight()">Core</button>
+        <i class="fas fa-arrows-alt-h fa-xs"></i>
+        <button class="body-part" onclick="cheeksHighlight()">Cheeks</button>
+        <i class="fas fa-arrows-alt-h fa-xs"></i>
+        <button class="body-part" onclick="legsHighlight()">Legs</button>
+      </div>
+      <br>
+      <div id="arms" class="row">
+        <div class="col-4">
+          <h3 class="exercise-header">BICEPS</h3>
+          <p><b>Function:</b> Flex Elbow, Supinate Forearm</p>
+          <img class="muscle-part" src="../Images/Biceps.png" alt="">
+          <p><b>Exercise:</b></p>
+          <ol>
+            <li>Standing Curl</li>
+            <li>Band Twist</li>
+            <li>Spider Curls</li>
+            <li>Cheat Curls</li>
+            <li>Chin-Ups</li>
+          </ol>
+        </div>
+        <div class="col-4">
+          <h3 class="exercise-header">TRICEPS</h3>
+          <p><b>Function:</b> Extend Elbow</p>
+          <img class="muscle-part" src="../Images/Triceps.png" alt="">
+          <p><b>Exercise:</b></p>
+          <ol>
+            <li>Push-Up Variations</li>
+            <li>Dips</li>
+            <li>DB Kickbacks</li>
+            <li>Skull Crushers</li>
+            <li>Push-Downs</li>
+          </ol>
+        </div>
+        <div class="col-4">
+          <h3 class="exercise-header">FOREARMS</h3>
+          <p><b>Function:</b> Extend/Flex Elbow, Pronate/Supinate Hand</p>
+          <img class="muscle-part" src="../Images/Forearms.png" alt="">
+          <p><b>Exercise:</b></p>
+          <ol>
+            <li>Pull-Up Towel Hang</li>
+            <li>Farmers Walk</li>
+            <li>Wrist Blaster</li>
+            <li>Crab Walk</li>
+            <li>Single-Arm Cable Row</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="row">
+        <div id="chest" class="col-6">
+          <h3>Chest</h3>
+          <p><b>Function:</b> Move & Stabilze Arms</p>
+          <img class="muscle-part" src="../Images/Chest.png" alt="">
+          <p>Exercises</p>
+          <ol>
+            <li>(Incline) Bench-Press</li>
+            <li>(Band) PecDecS</li>
+            <li>Plate Squeeze</li>
+            <li>Cable Crossover</li>
+            <li>DB Floor Flys</li>
+          </ol>
+        </div>
+        <div id="shoulders" class="col-6">
+          <h3>Shoulders</h3>
+          <p><b>Function:</b> Raise Arms & Assist Pecs</p>
+          <img class="muscle-part" src="../Images/Shoulders.png" alt="">
+          <p>Exercises</p>
+          <ol>
+            <li>Overhead Press</li>
+            <li>DB High Pulls</li>
+            <li>Face Pulls</li>
+            <li>DB Lateral Raises</li>
+            <li>Bodyweight Side Lateral</li>
+          </ol>
+        </div>
+      </div>
+
+      <div id="back" class="row">
+        <div class="col-4">
+          <h3>Traps</h3>
+          <p><b>Function:</b> Rotate & Stabilize Scapula, Extend Neck</p>
+          <img class="muscle-part" src="../Images/Trapezius.png" alt="">
+          <p>Exercises</p>
+          <ol>
+            <li>Deadlift</li>
+            <li>Bent-Over Row</li>
+            <li>Band Pull-Apart</li>
+            <li>Shrugs</li>
+            <li>Plate Raises</li>
+          </ol>
+        </div>
+        <div class="col-4">
+          <h3>Lats</h3>
+          <p><b>Function:</b> Extend, Adduct & Rotate Shoulder Joint</p>
+          <img class="muscle-part" src="../Images/Latissimus-Dorsi.png" alt="">
+          <p>Exercises</p>
+          <ol>
+            <li>(Underhand) Lat Pull-Downs</li>
+            <li>Lat Push-Downs</li>
+            <li>T-bar Row</li>
+            <li>DB Pull-Overs</li>
+            <li>(Weighted) Pull-Ups</li>
+          </ol>
+        </div>
+        <div class="col-4">
+          <h3>Lower Back (Erector Spinae)</h3>
+          <p><b>Function:</b> Stabilization</p>
+          <img class="muscle-part" src="../Images/Lower-Back.png" alt="">
+          <p>Exercises</p>
+          <ol>
+            <li>(Reverse) HyperExtension</li>
+            <li>Body Bridge</li>
+            <li>Angels & Devils</li>
+            <li>Stiff-Legged Deadlift</li>
+            <li>Good Mornings</li>
+          </ol>
+        </div>
+      </div>
+
+      <div id="core" class="row">
+        <div class="col-4">
+          <h3>Abs</h3>
+          <p><b>Function:</b> Stabilization</p>
+          <img class="muscle-part" src="../Images/Abs.png" alt="">
+          <p>Exercises</p>
+          <ol>
+            <li>Leg/Knee Rasies</li>
+            <li>Thigh Taps</li>
+            <li>Power-Ups</li>
+            <li>Leg Launch</li>
+          </ol>
+        </div>
+        <div class="col-4">
+          <h3>Obliques</h3>
+          <p><b>Function:</b> Flex / Rotate Torso</p>
+          <img class="muscle-part" src="../Images/Obliques.png" alt="">
+          <p>Exercises</p>
+          <ol>
+            <li>Band/Cable Twist</li>
+            <li>Side Cruch/Plank</li>
+            <li>Mountain Climber Crossover</li>
+            <li>Windsheild Wipers</li>
+          </ol>
+        </div>
+        <div class="col-4">
+          <h3>Serratus</h3>
+          <p><b>Function:</b> Protract Scapula</p>
+          <img class="muscle-part" src="../Images/Serratus.png" alt="">
+          <p>Exercises</p>
+          <ol>
+            <li>Push-Up Plus</li>
+            <li>Serratus Punch</li>
+            <li>Wall Roll</li>
+            <li>Bird Dog</li>
+          </ol>
+        </div>
+      </div>
+
+      <div id="cheeks" class="row">
+        <div class="col-6">
+          <h3>Cheeks</h3>
+          <p><b>Function:</b> Extend, Rotate & Abduct Hips</p>
+          <img class="muscle-part" src="../Images/Glutes.png" alt="">
+          <p>Exercises</p>
+          <ol>
+            <li>Glute Raise</li>
+            <li>Cable Hip-Thrust</li>
+            <li>Rinbow Leg Lift</li>
+            <li>Cable Kickbacks</li>
+            <li>Wall Sit</li>
+          </ol>
+        </div>
+        <div class="col-6">
+          <h3>Hip Abductors / Adductors</h3>
+          <p><b>Function:</b> Open & Close Legs</p>
+          <img class="muscle-part" src="../Images/Abductors.png" alt="">
+          <p>Exercises</p>
+          <ol>
+            <li>Lateral Band Walk</li>
+            <li>Lateral Leg Raises</li>
+            <li>Lateral Lunges</li>
+            <li>Clamshells</li>
+            <li>Fire Hydrants</li>
+          </ol>
+        </div>
+      </div>
+
+      <div id="legs" class="row">
+        <div class="col-4">
+          <h3>Quadriceps</h3>
+          <p><b>Function:</b> Extend Knee, Flex Hip</p>
+          <img class="muscle-part" src="../Images/Quadriceps.png" alt="">
+          <p>Exercises</p>
+          <ol>
+            <li>(Split) Squat</li>
+            <li>Leg Extension</li>
+            <li>Leg Press</li>
+            <li>Step-Ups</li>
+            <li>Straight Leg Raise</li>
+          </ol>
+        </div>
+        <div class="col-4">
+          <h3>Hamstrings</h3>
+          <p><b>Function:</b> Flex Knee, Hip Extension</p>
+          <img class="muscle-part" src="../Images/Hamstrings.png" alt="">
+          <p>Exercises</p>
+          <ol>
+            <li>Deadlift</li>
+            <li>Reverse Lunges</li>
+            <li>Hamstring Raise</li>
+            <li>Leg Curl</li>
+            <li>Kettlebell Swing</li>
+          </ol>
+        </div>
+        <div class="col-4">
+          <h3>Calves</h3>
+          <p><b>Function:</b> Dorsiflex/Plantarflex Foot</p>
+          <img class="muscle-part" src="../Images/Calves.png" alt="">
+          <p>Exercises</p>
+          <ol>
+            <li>Jump Squat</li>
+            <li>(Seated) Calf Raises</li>
+            <li>Seated Band Flex</li>
+            <li>Calf Leg Press</li>
+            <li>Jump Rope</li>
+          </ol>
+        </div>
+      </div>
+      <br>
+      <img width="50%" src="../Images/CardioChart.png" alt="">
+    </div>
+  </div>
+  <script>
+    function armsHighlight() {
+      document.getElementById('arms').classList.toggle("muscle-box");
+    }
+
+    function chestHighlight() {
+      document.getElementById('chest').classList.toggle("muscle-box");
+    }
+
+    function legsHighlight() {
+      document.getElementById('legs').classList.toggle("muscle-box");
+    }
+
+    function cheeksHighlight() {
+      document.getElementById('cheeks').classList.toggle("muscle-box");
+    }
+
+    function coreHighlight() {
+      document.getElementById('core').classList.toggle("muscle-box");
+    }
+
+    function shouldersHighlight() {
+      document.getElementById('shoulders').classList.toggle("muscle-box");
+    }
+
+    function backHighlight() {
+      document.getElementById('back').classList.toggle("muscle-box");
+    }
+  </script>
+  <script type="text/javascript">
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+  </script>
+
+</body>
+
+</html>
